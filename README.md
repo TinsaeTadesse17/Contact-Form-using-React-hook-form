@@ -1,4 +1,4 @@
-# Simple Contact Form with React
+# Simple Contact Form using React hook form
 
 This is a simple contact form built using React and the `react-hook-form` library. The form includes basic validation for required fields and email format.
 
