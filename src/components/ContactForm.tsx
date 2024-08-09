@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 import image from "../images/image.png";
 
 type FormValues = {
@@ -12,9 +13,11 @@ const ContactForm: React.FC = () => {
   const form = useForm<FormValues>();
   const { register, handleSubmit, formState } = form;
   const { errors } = formState;
+  const [showAlert, setShowAlert] = useState(false);
 
   const onSubmit = (data: FormValues) => {
     console.log("Form submitted", data);
+    setShowAlert(true);
   };
 
   return (
@@ -62,6 +65,12 @@ const ContactForm: React.FC = () => {
         </div>
 
         <button type="submit">Submit</button>
+
+        {showAlert && (
+          <div className="alert">
+            <p>Form submitted successfully!</p>
+          </div>
+        )}
       </form>
     </div>
   );
