@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# Simple Contact Form with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple contact form built using React and the `react-hook-form` library. The form includes basic validation for required fields and email format.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To get a local copy up and running, follow these steps.
 
-## Expanding the ESLint configuration
+### Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
+    ```sh
+    https://github.com/TinsaeTadesse17/Contact-Form-using-React-hook-form.git
+    ```
+2. Navigate to the project directory:
+    ```sh
+    cd Contact-Form-using-React-hook-form
+    ```
+   
+3. Install dependencies:
+    ```sh
+    npm install 
+    ```   
 
-- Configure the top-level `parserOptions` property like this:
+## Dependencies
+- `react-hook-form` library
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Usage
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Start the development server:
+   
+```sh
+    npm run dev
+```    
+   
+2. Open your web browser: the contact form should open automatically at http://localhost:3000 (or a similar address).
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Screenshots
+
+Main Interface
+
+<img width="944" alt="main" src="https://github.com/user-attachments/assets/1999b576-111c-4ded-b5f3-05f56ea3efdf">
+
+
+Validating the form inputs to prevent empty user data
+
+<img width="942" alt="required" src="https://github.com/user-attachments/assets/7f0614ca-8a3a-4515-84a2-6b13c864df3c">
+
+
+Validating the form inputs to prevent invalid user data
+
+<img width="941" alt="wrong" src="https://github.com/user-attachments/assets/da366dac-ea2b-4e0b-a77b-8406396b606f">
+
+
